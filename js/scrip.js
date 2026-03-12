@@ -158,3 +158,19 @@ atualizarTela()
 
 
 atualizarTela()
+const img = document.getElementById("imagem");
+
+let tempo = 0;
+
+function animar(){
+    tempo += 0.02;
+
+    let y = Math.sin(tempo) * 30;   // sobe e desce
+    let x = tempo * 2;              // move um pouco para frente
+
+    img.style.transform = `translate(${x}px, ${y}px)`;
+
+    requestAnimationFrame(animar);
+}
+
+animar();

@@ -26,14 +26,7 @@ box-shadow:0 0 10px rgb(151, 151, 241);
 #aviao{
 
 width:120px;
-
-
 }
-
-
-
-
-
 
 button{
 
@@ -61,5 +54,6 @@ margin:5px;
 }
 img{
     width: 30vh ;
-  
+    width:200px;
+    position:relative;
 }
