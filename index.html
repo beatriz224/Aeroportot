@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Aeroporto Inteligente</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>Aeroporto Inteligente</h1>
+
+<div class="aeroporto">
+
+<img id="aviao" src="img/Yellow_Pixel_Airplane__1_-removebg-preview.png">
+
+<p>Código: <span id="codigo"></span></p>
+<p>Origem: <span id="origem"></span></p>
+<p>Destino: <span id="destino"></span></p>
+<p>Altitude: <span id="altitude"></span></p>
+
+<button onclick="decolar()">Decolar</button>
+<button onclick="pousar()">Pousar</button>
+
+</div>
+
+
+<div>
+<h2>Jato Executivo</h2>
+
+<button onclick="ativarSupersonico()">Modo Supersônico</button>
+<button onclick="desativarSupersonico()">Desativar Supersônico</button>
+</div>
+
+<div>
+<h2>Avião de Carga</h2>
+
+<input type="number" id="peso" placeholder="Peso da carga">
+<button onclick="embarcar()">Embarcar carga</button>
+
+<p>Carga atual: <span id="carga"></span></p>
+</div>
+
+
+<script src="js/scrip.js"></script>
+
+</body>
+</html>
