@@ -173,4 +173,4 @@ function animar(){
     requestAnimationFrame(animar);
 }
 
-
+animar();
