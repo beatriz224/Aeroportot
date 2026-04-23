@@ -8,4 +8,19 @@ class Aeronave {
         this.destino = destino;
 
     }
-}
+      get lercombustivel() {
+        return `O tanque do voo ${this.#codigo} está em ${this.#combustivel}%`;
+    }
+
+    // 3. Crie o SETTER (A porta segura que permite ALTERAR, mas com regras!)
+    set abastecer(quantidade) {
+        if (quantidade < 0) {
+            console.log("Erro de segurança: Não é possível tirar combustível!");
+        } else if (this.#combustivel + quantidade > 100) {
+            console.log("Erro: O tanque vai transbordar! Limite é 100%.");
+        } else {
+            this.#combustivel += quantidade;
+            console.log(`Abastecimento concluído. Novo nível: ${this.#combustivel}%`);
+        }
+    } 
+}import {Voo} from "./voo.js/";
